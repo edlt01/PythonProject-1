@@ -30,5 +30,7 @@ def room(user_response):
 def spooky():
   print("Shocked")
 
+def Scary():
+    print("You hear a loud noice in the attic."
 
 begin_story()
