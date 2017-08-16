@@ -1,0 +1,34 @@
+# Beginning of story
+def begin_story():
+    print('You buy an old exotic house and the first thing you do is look up the owner of the old house and turns out the owner is a missing person, and all of the sudden you decide to make a decision...',
+    'What would you do next in this scenario?')
+    print('Enter the number that corresponds to your decision')
+    user_response = int(input('\n1. You continue to find out more about the missing person. \n2. You decide to make changes around the new house, such as peeling off old wallpaper. \n3. You destroy the house completely and you decide to live under the ocean.'))
+    room(user_response)
+
+def error(user_response):
+    if(user_response == 12):
+        print("You right off the bat found out that the wallpaper wasn't actual wallpaper, it was the skin of the missing person...")
+    else:
+        print("Easter Egg Award")
+        begin_story()
+
+# First choice
+def room(user_response):
+  if (user_response == 1):
+    print("Unfortunately, you could not find nothing about the missing person, so you decide to peel off old wallpaper from the walls all over the house.")
+    user_response = int(input('After you finished peeling off most of the wallpaper from the walls, you decide to call the investigators and the police to investigate more about the missing person. After the investigation the investigator tells you "Yep, human.." you are oddly confused about the response and situation, and decide to tell the investigator for a better explanation, then the investigator tells you "This isnt wallpaper you were removing."'))
+    spooky()
+  elif (user_response == 2):
+    print('After you finished peeling off most of the wallpaper from the walls, you decide to call the investigators and the police to investigate more about the missing person. After the investigation the investigator tells you "Yep, human.." you are oddly confused about the response and situation, and decide to tell the investigator for a better explanation, then the investigator tells you "This isnt wallpaper you were removing."')
+  elif (user_response == 3):
+    print('Well, there goes the money you spent for your new house, good luck living under the ocean and acknowledging your failure, make sure to wear a scuba suit, NOW RESTART THE GAME!')
+  else:
+      error(user_response)
+      
+# spooky 
+def spooky():
+  print("Shocked")
+
+
+begin_story()
