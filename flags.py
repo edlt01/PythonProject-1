@@ -1,0 +1,23 @@
+import tkinter as tk
+flag_app=tk.Tk()
+flag_app.title("Flags!")
+x=500
+canvas=tk.Canvas(flag_app, width=2*x, height=x, bg="red")
+    button_frame = tk.Frame(flag_app)
+    button_frame_label = tk.Label(button_frame, text="Button Widgets")
+    button_frame_label.grid(row=0, column=0, columnspan=3)
+    button1 = tk.Button(button_frame, text="Japan")
+    button1.grid(row=1, column=1)
+    button_frame.grid(row=0, column=0)
+    button2 = tk.Button(button_frame, text="Puerto Rico")
+    button2.grid(row=2, column=1)
+    button_frame.grid(row=0, column=0)
+    button3 = tk.Button(button_frame, text="Cuba")
+    button3.grid(row=3, column=1)
+    button_frame.grid(row=0, column=0)
+    button4 = tk.Button(button_frame, text="England/south korea")
+    button4.grid(row=4, column=1)
+    button_frame.grid(row=0, column=0)
+
+canvas.pack()
+flag_app.mainloop()
